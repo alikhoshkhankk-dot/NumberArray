@@ -23,13 +23,17 @@ int main()
 
     NumberArray scores(5);
 
+	// the number of values in the array is 5, so valid indexes are 0 through 4
+
     scores.setNumber(0, 10.0);
     scores.setNumber(1, 20.0);
     scores.setNumber(2, 30.0);
     scores.setNumber(3, 40.0);
     scores.setNumber(4, 50.0);
+    // the folling line is an invalid indes, so it should not change the arry.
 
     scores.print();
+
 
     cout << "First value: " << scores.getNumber(0) << endl;
     cout << "Middle value: " << scores.getNumber(2) << endl;
@@ -57,12 +61,16 @@ int main()
     // Test 5: Negative, decimal, and zero values
     cout << "\nTest 5: Negative and decimal values" << endl;
 
+    // the number of values in the array is 4, so valid indexes are 0 thriugh 3.
+
     NumberArray mixed(4);
 
     mixed.setNumber(0, -5.5);
     mixed.setNumber(1, 0.0);
     mixed.setNumber(2, 2.5);
     mixed.setNumber(3, 7.0);
+
+    // the folling line is an invalid index, so it should not change the array.
 
     mixed.print();
 
